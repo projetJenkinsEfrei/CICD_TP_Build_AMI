@@ -27,7 +27,7 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "./play.yml"
+            "playbook_file": "./Ansible/play.yml"
         }
     ]
 }

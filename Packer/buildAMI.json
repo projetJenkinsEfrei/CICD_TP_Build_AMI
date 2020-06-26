@@ -20,7 +20,7 @@
             "temporary_security_group_source_cidrs": "{{user `temporary_security_group_source_cidrs`}}",
             "associate_public_ip_address": "{{user `associate_public_ip_address`}}",
             "tags": {
-                "Name": "Packer-Ansible-{{user `env`}}"git
+                "Name": "Packer-Ansible-{{user `env`}}"
             }
         }
     ],

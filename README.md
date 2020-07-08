@@ -28,12 +28,12 @@ Ici ce dépot contient deux répertoires : Ansible et Packer.
 On utilise Jenkins dans la version 1.5.1
 
 ```sh
-wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add - && \
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list' && \
-sudo apt update && \
-sudo apt install default-jre jenkins --yes && \
-sudo systemctl enable jenkins && \
-sudo systemctl start jenkins && \
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add - 
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list' 
+sudo apt update 
+sudo apt install default-jre jenkins --yes 
+sudo systemctl enable jenkins 
+sudo systemctl start jenkins 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
